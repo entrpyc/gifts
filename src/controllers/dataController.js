@@ -8,6 +8,8 @@ async function dataController (req, res) {
       range: "Sheet1",
     });
     const rows = result.data.values;
+
+    console.log(`Seding ${rows}`)
     res.json(rows);
   } catch (err) {
     console.error(err);
