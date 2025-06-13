@@ -34,6 +34,8 @@ async function deleteController(req, res) {
       },
     });
 
+    console.log(`${value} deleted`)
+
     res.send("Row deleted");
   } catch (err) {
     console.error(err);
